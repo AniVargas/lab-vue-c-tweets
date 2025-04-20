@@ -1,12 +1,17 @@
-<script setup>
+<script>
 
 const props = defineProps({
- message: String,
+  user: {
+  name: String,
+  img: String,
+  handle: String,
+  },  
+  timestamp: String, 
+  message: String,
 });
 
 </script>
 
-
 <template>
-    <p class="message">{{tweets[0].message}}</p>
+    <p class="message">{{message}}</p>
 </template>
